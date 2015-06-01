@@ -4,8 +4,8 @@
 vagrant_box: 8thom/acquia-php_5.5
 
 # Vagrant hostname and IP configuration.
-vagrant_hostname: local.cloudvm.com
-vagrant_ip: 192.168.4.40
+vagrant_hostname: acquia-vagrant.local
+vagrant_ip: 192.168.4.44
 
 # Run provision on vagrant up
 vagrantup_provision: "false"
@@ -44,9 +44,9 @@ varnish_storage: "malloc,256m"
 
 apache_listen_port: 8080
 apache_vhosts:
-  - servername: "local.cloudvm.com"
+  - servername: "acquia-vagrant.local"
     documentroot: "/drupal"
-  - servername: "local.xhprof.com"
+  - servername: "xhprof.acquia-vagrant.local"
     documentroot: "/usr/share/php/xhprof_html"
 
 # The php version can not be changed.
