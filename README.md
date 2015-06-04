@@ -6,7 +6,7 @@ This project is designed to demonstrate the simplicity of the [Acquia Vagrant](h
 
 This example assumes you have git, Virtualbox and Vagrant installed.
 
-I recommend installing the [Vagrant Host Manager](https://github.com/smdahlen/vagrant-hostmanager) plugin, however this is not a requirement.
+I recommend installing the [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) plugin, however this is not a requirement.
 
 `$ vagrant plugin install vagrant-hostmanager`
 
@@ -25,7 +25,7 @@ I recommend that you use `drush sql-sync` as documented in the project page.
   vagrant up
   ```
 
-  3. If you have Vagrant Host Manager installed - skip this step..
+  3. If you have [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) installed - skip this step..
 
   Update you hosts file - add the following line:
 
@@ -50,7 +50,7 @@ I recommend that you use `drush sql-sync` as documented in the project page.
 
   2. Open config.yml
 
-  Edit php_memory_limit, eg change it to "512M".
+  Edit php_memory_limit, eg change it to "296M".
 
   ```
   php_memory_limit: "512M"
@@ -67,6 +67,10 @@ I recommend that you use `drush sql-sync` as documented in the project page.
   4. Go back to http://acquia-vagrant.local/phpinfo.php
 
   Look for 'memory_limit' - it should be updated.
+
+# Reboot the box.
+
+  1. Run `vagrant reload` in the root of the project.
 
 # Shutdown the box.
 
