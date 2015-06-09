@@ -8,7 +8,7 @@ This example assumes you have git, Virtualbox and Vagrant installed.
 
 I recommend installing the [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) plugin, however this is not a requirement.
 
-`$ vagrant plugin install vagrant-hostmanager`
+`$ vagrant plugin install vagrant-hostsupdater`
 
 **Never** add a SQL dump to a code repository -- this is only done as an example of database importing.
 I recommend that you use `drush sql-sync` as documented in the project page.
@@ -27,7 +27,7 @@ I recommend that you use `drush sql-sync` as documented in the project page.
 
   3. If you have [Vagrant Host Updater](https://github.com/cogitatio/vagrant-hostsupdater) installed - skip this step..
 
-  Update you hosts file - add the following line:
+  Update your hosts file - add the following line:
 
   ```
   192.168.4.44      acquia-vagrant.local
