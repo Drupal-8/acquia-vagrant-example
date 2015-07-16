@@ -33,17 +33,19 @@ I recommend that you use `drush sql-sync` as documented in the project page.
   192.168.4.44      acquia-vagrant.local
   ```
 
-  4. Goto http://acquia-vagrant.local/
+  4. Go to http://acquia-vagrant.local/
 
-  username :: vagrant
-  password :: vagrant
+  ```
+  username: vagrant
+  password: vagrant
+  ```
 
   5. Happy days.
 
 
 # Updating box config
 
-  1. Goto http://acquia-vagrant.local/phpinfo.php
+  1. Go to http://acquia-vagrant.local/phpinfo.php
 
   This shows the current php config for the box.
   Look for 'memory_limit' - it's set to 256M by default.
@@ -53,7 +55,7 @@ I recommend that you use `drush sql-sync` as documented in the project page.
   Edit php_memory_limit, eg change it to "296M".
 
   ```
-  php_memory_limit: "512M"
+  php_memory_limit: "296M"
   ```
 
   Save and close.
@@ -62,7 +64,7 @@ I recommend that you use `drush sql-sync` as documented in the project page.
 
   `vagrant provision`
 
-  This updates the ansible roles, then reprovisions the box.
+  This reprovisions the box.
 
   4. Go back to http://acquia-vagrant.local/phpinfo.php
 
